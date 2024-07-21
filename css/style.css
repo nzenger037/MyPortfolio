@@ -257,6 +257,10 @@ header {
     position: relative;
 }
 
+.intro-item {
+    position: relative;
+}
+
 .intro__img {
     box-shadow: var(--bs);
 }
@@ -270,6 +274,16 @@ header {
         display: grid;
         width: min-content;
         margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: "img title" "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro-item {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        padding-bottom: 0em;
         grid-column-gap: 1em;
         grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
@@ -465,6 +479,12 @@ header {
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
+}
+
+.portfolio-item-individual img {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-item-individual p {
